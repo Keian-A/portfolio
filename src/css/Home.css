@@ -1,0 +1,19 @@
+.Home {
+  margin-top: 10px;
+}
+
+.selfInfo {
+  display: flex;
+  justify-content: center;
+}
+
+img.selfImage {
+  height: 500px;
+  margin: 0 5%;
+  border: 1px solid black;
+}
+
+p.selfDescription {
+  width: 60%;
+  margin: auto 1%;
+}
