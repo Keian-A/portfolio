@@ -2,11 +2,12 @@
   margin-bottom: 20px;
 }
 
-a {
+a.navLink {
+  color: black;
   margin: auto 2em;
   text-decoration: none;
 }
 
-a:hover {
+a.navLink:hover {
   color: red;
 }
