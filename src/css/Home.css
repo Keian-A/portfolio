@@ -13,7 +13,7 @@ img.selfImage {
   border: 1px solid black;
 }
 
-p.selfDescription {
+.selfDescription {
   width: 60%;
   margin: auto 1%;
 }
