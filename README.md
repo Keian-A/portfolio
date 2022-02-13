@@ -2,7 +2,16 @@
 
 ## Credit
 
-CSS Google font style used:
+NPM [Hamburger](https://www.npmjs.com/package/hamburger-react)
+
+```bash
+# In root-directory of project, in your terminal
+npm i hamburger-react
+```
+
+Google [Font](https://fonts.google.com/specimen/Poppins?query=poppin)
+
+How to add font:
 
 ``` html
 <!-- Place in 'head' section in HTML file -->

@@ -11,3 +11,9 @@ a.navLink {
 a.navLink:hover {
   color: red;
 }
+
+.hamburger-react {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+}

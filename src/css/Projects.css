@@ -8,7 +8,7 @@ p {
 }
 
 #ptagSkill {
-  border-bottom: 1px solid black;
+  font-weight: bold;
 }
 
 .ptagSkills {
@@ -16,7 +16,21 @@ p {
 }
 
 .ProjectDescription {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.HelpfulLinks {
+  margin-left: 5px;
+  width: 250px;
+}
+
+.skillsDeveloped {
+  margin-right: 5px;
+  width: 250px;
+}
+
+.ProjectImage {
+  width: 500px;
 }
 
 a.ProjectLink {
@@ -24,4 +38,16 @@ a.ProjectLink {
   display: block;
   text-align: left;
   text-decoration: none;
+}
+
+a.ProjectLink:hover {
+  color: red;
+}
+
+h4 {
+  margin: 0 0 5px 0;
+}
+
+h2 {
+  margin: 40px 0 5px 0;
 }
