@@ -1,7 +1,19 @@
 import '../css/Home.css';
 import myself from '../images/Myself.png';
+import { useEffect } from 'react';
+import darkModeToggle from '../functions/darkModeToggle';
+import lightModeToggle from '../functions/lightModeToggle';
 
 function Home() {
+
+  useEffect(() => {
+    if (document.getElementsByTagName("h1")[0].style.color === "white") {
+      darkModeToggle();
+    } else {
+      lightModeToggle();
+    }
+  });
+
   return (
     <div className="Home">
       <div className="selfInfo">

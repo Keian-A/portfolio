@@ -1,13 +1,22 @@
 import '../css/NavBar.css';
 import { Twirl as Hamburger } from 'hamburger-react';
 import HamburgerMenu from './HamburgerMenu';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import darkModeToggle from '../functions/darkModeToggle';
+import lightModeToggle from '../functions/lightModeToggle';
 
 function NavBar() {
 
   const [isOpen, setOpen] = useState(false);
-
   const showMenu = () => setOpen(!isOpen);
+
+  useEffect(() => {
+    if (document.getElementsByTagName("h1")[0].style.color === "white") {
+      darkModeToggle();
+    } else {
+      lightModeToggle();
+    }
+  });
 
   return (
     <div className="NavBar">
