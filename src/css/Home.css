@@ -1,10 +1,7 @@
 .Home {
   margin-top: 10px;
-}
-
-.selfInfo {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 img.selfImage {
@@ -14,6 +11,31 @@ img.selfImage {
 }
 
 .selfDescription {
-  width: 60%;
-  margin: auto 1%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.infoDesc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+}
+
+.pageDescription {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoDesc p {
+  text-align: left;
+}
+
+.infoDesc p {
+  text-align: left;
+}
+
+.pageDescription p {
+  margin: 0 auto;
+  text-align: left;
+  width: 400px;
 }

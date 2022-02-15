@@ -1,32 +1,15 @@
-p {
-  margin: 0 auto;
-}
-
-.InnerInfo {
+.Project {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#ptagSkill {
-  font-weight: bold;
+div.ProjectTop {
+  width: 500px;
 }
 
-.ptagSkills {
-  text-align: right;
-}
-
-.ProjectDescription {
-  margin-bottom: 10px;
-}
-
-.HelpfulLinks {
-  margin-left: 5px;
-  width: 250px;
-}
-
-.skillsDeveloped {
-  margin-right: 5px;
-  width: 250px;
+p.ProjectDescription {
+  text-align: left;
 }
 
 .ProjectImage {
@@ -44,10 +27,31 @@ a.ProjectLink:hover {
   color: red;
 }
 
-h4 {
-  margin: 0 0 5px 0;
+.InnerInfo {
+  display: flex;
 }
 
-h2 {
-  margin: 40px 0 5px 0;
+#ptagSkill {
+  font-weight: bold;
+}
+
+.ptagSkills {
+  margin: 0 5px 0 0;
+  text-align: right;
+}
+
+.skillsDeveloped {
+  width: 250px;
+}
+
+#LinkDesc {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.HelpfulLinks {
+  text-align: left;
+  margin-left: 5px;
+  width: 250px;
 }
