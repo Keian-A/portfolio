@@ -34,8 +34,8 @@ img.selfImage {
   text-align: left;
 }
 
-.pageDescription p {
+p.PageDescription {
   margin: 0 auto;
   text-align: left;
-  width: 400px;
+  width: 50%;
 }
