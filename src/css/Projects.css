@@ -13,7 +13,7 @@ p.ProjectDescription {
 }
 
 .ProjectImage {
-  width: 500px;
+  height: 120px;
 }
 
 a.ProjectLink {
@@ -29,6 +29,9 @@ a.ProjectLink:hover {
 
 .InnerInfo {
   display: flex;
+  padding-bottom: 5px;
+  /* Needs better separator than this eventually */
+  border-bottom: 1px solid black;
 }
 
 #ptagSkill {
