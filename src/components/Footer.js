@@ -1,7 +1,7 @@
 import '../css/Footer.css';
-import GitHubLogo from '../images/GitHubSmall.png';
-import LinkedInLogo from '../images/LinkedInSmall.png';
-import FacebookIcon from '../images/FacebookSmall.png';
+import GitHubLogo from '../images/footer-images/GitHubSmall.png';
+import LinkedInLogo from '../images/footer-images/LinkedInSmall.png';
+import FacebookIcon from '../images/footer-images/FacebookSmall.png';
 import { useEffect } from 'react';
 import darkModeToggle from '../functions/darkModeToggle';
 import lightModeToggle from '../functions/lightModeToggle';

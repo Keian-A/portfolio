@@ -2,9 +2,16 @@
   margin-bottom: 20px;
 }
 
-/* Put styling for container here */
+.SiteName {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .ActiveNav {
-  display: flex;
+  width: fit-content;
+  right: 0;
+  top: 0;
+  position: absolute;
 }
 
 .Nav {

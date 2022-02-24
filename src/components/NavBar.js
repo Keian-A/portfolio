@@ -20,7 +20,7 @@ function NavBar() {
 
   return (
     <div className="NavBar">
-      <h1>Keian's Portfolio</h1>
+      <h1 className="SiteName">Keian's Portfolio</h1>
       <Hamburger toggled={isOpen} toggle={showMenu} />
       <nav className={isOpen ? "ActiveNav" : "Nav"}>
         <HamburgerMenu />
