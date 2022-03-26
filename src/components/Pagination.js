@@ -22,14 +22,14 @@ function Pagination(props) {
     }
 
     const getPaginatedData = () => {
-        const startIndex = ((currentPage * itemsPerPageConfig) - itemsPerPageConfig);
+        const startIndex = currentPage * itemsPerPageConfig - itemsPerPageConfig;
         const endIndex = (startIndex) + itemsPerPageConfig;
         return props.data.slice(startIndex, endIndex);
     };
 
     const getPaginatedGroup = () => {
-        let start = Math.floor((currentPage - 1) / itemsPerPageConfig) * 3;
-        return new Array(pages).fill().map((_, idx) => start + idx + 1);
+        let start = Math.floor((currentPage - 1) / itemsPerPageConfig) * itemsPerPageConfig;
+        return new Array(currentPage).fill().map((_, idx) => start + idx + 1);
     };
 
     return (
@@ -47,14 +47,15 @@ function Pagination(props) {
                     onClick={goToPreviousPage}
                     className={`prev ${currentPage === 1 ? 'disabled' : ''}`}
                 >
-                    prev
+                    Prev
                 </button>
 
                 {getPaginatedGroup().map((item, index) => (
                     <button
                         key={index}
                         onClick={changePage}
-                        className={`paginationItem ${currentPage === item ? 'active' : null}`}
+                        // Get classname here to disable the correct button on correct conditions
+                        className={`paginationItem ${currentPage === item || item < pages ? 'active' : 'disabled'}`}
                     >
                         <span>{item}</span>
                     </button>
@@ -64,7 +65,7 @@ function Pagination(props) {
                     onClick={goToNextPage}
                     className={`next ${currentPage === pages || currentPage === 0 ? 'disabled' : ''}`}
                 >
-                    next
+                    Next
                 </button>
             </div>
 

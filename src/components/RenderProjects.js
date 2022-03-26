@@ -1,6 +1,18 @@
 import '../css/RenderProjects.css';
+import { useEffect } from 'react';
+import lightModeToggle from '../functions/lightModeToggle.js';
+import darkModeToggle from '../functions/darkModeToggle.js';
 
 function RenderProjects(props) {
+
+    useEffect(() => {
+        if (document.getElementsByTagName("h1")[0].style.color === "white") {
+            darkModeToggle();
+        } else {
+            lightModeToggle();
+        }
+    });
+
     return (
         <div className="Projects">
             <div className="Project">
