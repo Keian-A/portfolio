@@ -1,0 +1,18 @@
+.pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.liItem {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.previous {
+    margin-right: 5px;
+}
+
+.next {
+    margin-left: 5px;
+}

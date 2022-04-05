@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import darkModeToggle from '../functions/darkModeToggle';
 import lightModeToggle from '../functions/lightModeToggle';
 import projectData from '../data/projectData.js';
-import Pagination from './Pagination';
+import PaginatedItems from './PaginatedItems.jsx';
 
 function Projects() {
 
@@ -22,7 +22,7 @@ function Projects() {
   return (
     <div>
       {/* Search component here */}
-      <Pagination data={queriedData} />
+      <PaginatedItems itemsPerPage={3} itemList={queriedData} />
     </div>
   );
 }
