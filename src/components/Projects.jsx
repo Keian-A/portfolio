@@ -1,28 +1,26 @@
 import '../css/Projects.css';
-import { useEffect } from 'react';
-import darkModeToggle from '../functions/darkModeToggle';
-import lightModeToggle from '../functions/lightModeToggle';
+import { useState } from 'react';
 import projectData from '../data/projectData.js';
 import PaginatedItems from './PaginatedItems.jsx';
+import Search from './Search.jsx';
 
 function Projects() {
 
-  useEffect(() => {
+  const [data, setData] = useState(projectData);
 
-    // Change color scheme here
-    if (document.getElementsByTagName("h1")[0].style.color === "white") {
-      darkModeToggle();
-    } else {
-      lightModeToggle();
-    }
-  });
-
-  let queriedData = projectData;
+  const setQuerySearch = (queryStr) => {
+    let result = projectData.map(project => {
+      console.log(project.techUsed)
+      return project.techUsed.includes(queryStr) ? project : null;
+    });
+    console.log(result);
+    setData(result);
+  }
 
   return (
     <div>
-      {/* Search component here */}
-      <PaginatedItems itemsPerPage={3} itemList={queriedData} />
+      <Search setQuerySearch={setQuerySearch} />
+      <PaginatedItems itemsPerPage={3} itemList={data} />
     </div>
   );
 }
