@@ -13,7 +13,6 @@ function Projects() {
       console.log(project.techUsed)
       return project.techUsed.includes(queryStr) ? project : null;
     });
-    console.log(result);
     setData(result);
   }
 

@@ -1,5 +1,9 @@
 # Keian's Portfolio
 
+## Application Purpose
+
+The purpose of this application is to display my skill set in the professional setting.
+
 ## Credit
 
 NPM [Hamburger](https://www.npmjs.com/package/hamburger-react)

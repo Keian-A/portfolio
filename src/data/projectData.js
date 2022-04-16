@@ -33,11 +33,11 @@ const testData = [
     },
     {
         techUsed: 'javascript,jsx,nodejs,node.js',
-        projectTitle: 'To-do Application',
-        projectDesc: 'This application provides the user notes which enables the user to remind themselves of items they previously entered.',
-        skills: ['Collaboration', 'Creativity', 'Organization'],
-        links: ['Front-end repository::::::https://github.com/Keian-A/todo-app', 'Deployed site::::::https://keians-todo-app.netlify.app/'],
-        image: require('../images/project-icons/TD.png')
+        projectTitle: 'Portfolio',
+        projectDesc: 'This is one of many personal projects, however this one is constructed for a professional display of my skill set.',
+        skills: ['Skills', 'Creativity', 'Organization'],
+        links: ['Front-end repository::::::https://github.com/Keian-A/portfolio', 'Deployed site::::::https://keiansportfolio.netlify.app/'],
+        image: require('../images/project-icons/P.png')
     }
 ];
 

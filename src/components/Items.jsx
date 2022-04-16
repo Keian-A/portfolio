@@ -17,6 +17,7 @@ function Items(props) {
                                         </div>
                                         <div className="InnerInfo">
                                             <div className="skillsDeveloped">
+                                                <p></p>
                                                 {item.skills.map((item, idx) => {
                                                     return <p key={idx} className="ptagSkills">{item}</p>
                                                 })}
@@ -37,6 +38,11 @@ function Items(props) {
                                         </div>
                                     </div>
                                 </div>
+                            );
+                        } else {
+                            return (
+                                <>
+                                </>
                             );
                         }
                     })
