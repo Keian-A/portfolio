@@ -24,7 +24,7 @@ const testData = [
         image: require('../images/project-icons/sockiTalki.png')
     },
     {
-        techUsed: 'javascript,jsx,nodejs,node.js',
+        techUsed: 'javascript,jsx,react',
         projectTitle: 'To-do Application',
         projectDesc: 'This application provides the user notes which enables the user to remind themselves of items they previously entered.',
         skills: ['Collaboration', 'Creativity', 'Organization'],
@@ -32,12 +32,20 @@ const testData = [
         image: require('../images/project-icons/TD.png')
     },
     {
-        techUsed: 'javascript,jsx,nodejs,node.js',
+        techUsed: 'javascript,jsx,react',
         projectTitle: 'Portfolio',
         projectDesc: 'This is one of many personal projects, however this one is constructed for a professional display of my skill set.',
         skills: ['Personalization', 'Creativity', 'Organization'],
         links: ['Front-end repository::::::https://github.com/Keian-A/portfolio', 'Deployed site::::::https://keiansportfolio.netlify.app/'],
         image: require('../images/project-icons/P.png')
+    },
+    {
+        techUsed: 'javascript,jsx,react',
+        projectTitle: 'Notepad',
+        projectDesc: 'This application is a simple note-saving app. Designed without googling anything. A challenge for myself to work with debugging and application of previously used skills.',
+        skills: ['Debugging', 'Creativity', 'Challenge'],
+        links: ['Front-end repository::::::https://github.com/Keian-A/notepad'],
+        image: require('../images/project-icons/TD.png')
     }
 ];
 
