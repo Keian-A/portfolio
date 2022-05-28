@@ -2,19 +2,8 @@ import '../css/Footer.css';
 import GitHubLogo from '../images/footer-images/GitHubSmall.png';
 import LinkedInLogo from '../images/footer-images/LinkedInSmall.png';
 import FacebookIcon from '../images/footer-images/FacebookSmall.png';
-import { useEffect } from 'react';
-import darkModeToggle from '../functions/darkModeToggle';
-import lightModeToggle from '../functions/lightModeToggle';
 
 function Footer() {
-
-  useEffect(() => {
-    if (document.getElementsByTagName("h1")[0].style.color === "white") {
-      darkModeToggle();
-    } else {
-      lightModeToggle();
-    }
-  });
 
   return (
     <div className="Footer">
