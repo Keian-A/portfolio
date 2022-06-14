@@ -6,7 +6,7 @@
 }
 
 img.selfImage {
-  height: 500px;
+  height: 300px;
   max-width: fit-content;
   margin: 0 auto;
   border: 1px solid rgba(117, 112, 112, 0.397);
@@ -26,7 +26,7 @@ img.selfImage {
   margin-right: 8rem;
 }
 
-.infoDesc p {
+.paragraph {
   text-align: left;
   margin: 0 auto;
   max-width: 50vw;
