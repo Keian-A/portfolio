@@ -26,3 +26,6 @@ How to add font:
 /* Place in css file where you want to use font */
 font-family: 'Poppins', sans-serif;
 ```
+
+Update:
+- There is a halt due to personal issues with an integration problem regarding the merge of the backend for the messaging system, therefore it will be a few days before messaging system is functional.
