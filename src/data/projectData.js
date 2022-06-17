@@ -36,7 +36,7 @@ const testData = [
         projectTitle: 'Portfolio',
         projectDesc: 'This is one of many personal projects, however this one is constructed for a professional display of my skill set.',
         skills: ['Personalization', 'Creativity', 'Organization'],
-        links: ['Front-end repository::::::https://github.com/Keian-A/portfolio', 'Deployed site::::::https://keiansportfolio.netlify.app/'],
+        links: ['Front-end repository::::::https://github.com/Keian-A/portfolio', 'Back-end repository::::::https://github.com/Keian-A/portfolio-back', 'Deployed site::::::https://keiansportfolio.netlify.app/'],
         image: require('../images/project-icons/P.png')
     },
     {
