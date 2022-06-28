@@ -10,7 +10,6 @@ function Projects() {
 
   const setQuerySearch = (queryStr) => {
     let result = projectData.map(project => {
-      console.log(project.techUsed)
       return project.techUsed.includes(queryStr) ? project : null;
     });
     setData(result);
