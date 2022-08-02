@@ -10,8 +10,9 @@ function Home() {
         <img className="selfImage" src={myself} alt="myself" />
         <div className="infoDesc">
           <div className="aboutMe">
-            <h2>About me</h2>
-            <p className="paragraph">Hey all! My name is Keian Anthony, and I am a full stack software developer. I have always been interested in technology ever since I was 8 years old and received my first laptop for my birthday. Recently I have been in love with the software development side of tech. I am professionally skilled in a plethora of languages & frameworks including JavaScript, React, Node.js, Java, Lua, and more.</p>
+            <h2>&lt;AboutMe&gt;</h2>
+            <p className="paragraph">Graduate of software engineering. Experience with JavaScript, React.js, Node.js, HTML5, CSS3, python, Django. Currently learning C#, .NET, and Java.</p>
+            <h2>&lt;/AboutMe&gt;</h2>
           </div>
           <div className="purpose">
             <h2>Application Purpose</h2>

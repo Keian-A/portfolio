@@ -10,7 +10,7 @@ img.selfImage {
   max-width: fit-content;
   margin: 0 auto;
   border: 1px solid rgba(117, 112, 112, 0.397);
-  border-radius: 0.25rem;
+  border-radius: 50%;
   filter: drop-shadow(5px 5px 4px rgb(51, 50, 50));
 }
 

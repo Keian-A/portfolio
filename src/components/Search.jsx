@@ -2,8 +2,26 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
+import { useState } from 'react';
+import projectData from '../data/projectData.js';
+import PaginatedItems from './PaginatedItems.jsx';
 
-function Search(props) {
+function Search() {
+
+    const [data, setData] = useState(projectData);
+    const [Query, setQuery] = React.useState('');
+
+    const setQuerySearch = (queryStr) => {
+        let result = projectData.map(project => {
+            return project.techUsed.includes(queryStr) ? project : null;
+        });
+        setData(result);
+    }
+
+    const handleChange = (e) => {
+        setQuery(e.target.value);
+        setQuerySearch(Query);
+    };
 
     const QueriedItem = [
         {
@@ -23,13 +41,6 @@ function Search(props) {
             label: 'React',
         },
     ];
-
-    const [Query, setQuery] = React.useState('');
-
-    const handleChange = (event) => {
-        setQuery(event.target.value);
-        props.setQuerySearch(event.target.value);
-    };
 
     return (
         <>
@@ -59,6 +70,7 @@ function Search(props) {
                     </TextField>
                 </div>
             </Box>
+            <PaginatedItems itemsPerPage={3} itemList={data} />
         </>
     );
 }
